@@ -9,6 +9,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+@override
+  void initState() {
+    //call the function here 
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -70,7 +77,9 @@ class _HomePageState extends State<HomePage> {
                     width: 300,
                     color: Colors.black12,
                     child: Column(
-                      children: [],
+                      children: [
+                        Text('Test text')
+                      ],
                     ),                   
                   );
                 }
